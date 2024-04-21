@@ -2,8 +2,9 @@
     max-width: 400px;
     margin: 50px auto;
     padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    border: 10px solid #4d885f; /* Темнозеленый */
+    border-radius: 15px; /* Закругленные края */
+    background-color: #7fff7f; /* Салатовый */
 }
 
 .form-group {
@@ -19,14 +20,14 @@ input[type="text"],
 input[type="password"] {
     width: 100%;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #d80c0c;
     border-radius: 3px;
     font-size: 16px;
 }
 
 button {
-    background-color: #007bff;
-    color: #fff;
+    background-color: #ffa07a; /* Персиковый */
+    color: #4e964e;
     border: none;
     border-radius: 3px;
     padding: 10px 20px;
@@ -35,5 +36,5 @@ button {
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #ff7f50; /* Темно-персиковый */
 }
