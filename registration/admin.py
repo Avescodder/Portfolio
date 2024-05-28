@@ -1,7 +1,8 @@
 from django.contrib import admin
 
-from registration.models import Post
+from registration.models import Watch, Brand
 
 # Register your models here.
 
-admin.site.register(Post)
+admin.site.register(Watch)
+admin.site.register(Brand)
