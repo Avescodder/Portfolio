@@ -1,40 +1,86 @@
-.container {
-    max-width: 400px;
-    margin: 50px auto;
-    padding: 20px;
-    border: 10px solid #4d885f; /* Темнозеленый */
-    border-radius: 15px; /* Закругленные края */
-    background-color: #7fff7f; /* Салатовый */
+
+
+body {
+    margin: 0px;
+    font-family: "Helvetica", "Arial Nova", Helvetica, Arial, sans-serif ;
+}
+.label svg {
+    padding: 35px;
+}
+.label {
+    background: linear-gradient(to right, rgb(11, 62, 39), rgb(25, 113, 73));
+    height: 10vh; /* Высота полосы */
+    width: 100%; /* Ширина полосы, чтобы она занимала всю ширину окна браузера */
+    position: fixed; /* Фиксированное позиционирование, чтобы полоса была всегда видна вверху страницы */
+    top: 0; /* Расположение полосы сверху страницы */
+    z-index: 1000; /* Задаем высокий уровень z-index, чтобы полоса была поверх других элементов */
+    display: grid;
+    grid-template-columns: 20vw 50vw 30vw;
+}
+.label-center  {
+    display: flex;
+    justify-content: center; 
 }
 
-.form-group {
-    margin-bottom: 20px;
+.label-center svg {
+    width: 37px;
 }
 
-label {
-    display: block;
-    margin-bottom: 5px;
+.label-left div {
+    font-weight: 250;
+    color: white;
+    font-size: 90%;
 }
 
-input[type="text"],
-input[type="password"] {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #d80c0c;
-    border-radius: 3px;
-    font-size: 16px;
+.label-left svg {
+    width: 40px;
 }
 
-button {
-    background-color: #ffa07a; /* Персиковый */
-    color: #4e964e;
-    border: none;
-    border-radius: 3px;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
+.label-left {
+    position:  absolute;
+    top: 23px;
+    left: 104px;
+    margin: 20px;
 }
 
-button:hover {
-    background-color: #ff7f50; /* Темно-персиковый */
+.label-right-find-icon {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    right: 580px;
+    top: 45px;
+    margin: auto;
+    color: white !important;
+    fill: white !important;
+}
+
+.label-right-find-icon .text {
+    margin-right: 5px;
+    font-weight: 250;
+    top: 40px;
+    
+}
+
+.label-right-find-icon svg {
+    width: 40px;
+    margin-left: 10px;
+    padding: 0px; /* Уменьшаем отступ между иконкой и текстом */
+}
+
+
+.label-right-find-icon .icon-with-text {
+    display: flex;
+    align-items: center;
+}
+
+.label-point {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    width: 91px;
+    right: 450px;
+    top: 8px;
+    margin: auto;
+    color: white !important;
+    fill: white !important;
 }
